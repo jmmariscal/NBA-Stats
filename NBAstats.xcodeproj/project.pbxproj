@@ -14,8 +14,19 @@
 		AF86D5D62714E1760037F3A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF86D5D52714E1760037F3A4 /* Assets.xcassets */; };
 		AF86D5D92714E1760037F3A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF86D5D72714E1760037F3A4 /* LaunchScreen.storyboard */; };
 		AF86D5E12714E1F70037F3A4 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D5E02714E1F70037F3A4 /* ModelController.swift */; };
-		AF86D5EA271F6DAF0037F3A4 /* NBAstatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D5E9271F6DAF0037F3A4 /* NBAstatsTests.swift */; };
+		AF86D5F4271F6FB40037F3A4 /* NBAstatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D5F3271F6FB40037F3A4 /* NBAstatsTests.swift */; };
+		AF86D5FB271F73050037F3A4 /* VCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D5FA271F73050037F3A4 /* VCTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF86D5F5271F6FB40037F3A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF86D5C12714E1750037F3A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF86D5C82714E1750037F3A4;
+			remoteInfo = NBAstats;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AF86D5C92714E1750037F3A4 /* NBAstats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBAstats.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,11 +38,20 @@
 		AF86D5D82714E1760037F3A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF86D5DA2714E1760037F3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF86D5E02714E1F70037F3A4 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		AF86D5E9271F6DAF0037F3A4 /* NBAstatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAstatsTests.swift; sourceTree = "<group>"; };
+		AF86D5F1271F6FB40037F3A4 /* NBAstatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBAstatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF86D5F3271F6FB40037F3A4 /* NBAstatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAstatsTests.swift; sourceTree = "<group>"; };
+		AF86D5FA271F73050037F3A4 /* VCTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AF86D5C62714E1750037F3A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF86D5EE271F6FB40037F3A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				AF86D5CB2714E1750037F3A4 /* NBAstats */,
+				AF86D5F2271F6FB40037F3A4 /* NBAstatsTests */,
 				AF86D5CA2714E1750037F3A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				AF86D5C92714E1750037F3A4 /* NBAstats.app */,
+				AF86D5F1271F6FB40037F3A4 /* NBAstatsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,9 +90,17 @@
 				AF86D5D52714E1760037F3A4 /* Assets.xcassets */,
 				AF86D5D72714E1760037F3A4 /* LaunchScreen.storyboard */,
 				AF86D5DA2714E1760037F3A4 /* Info.plist */,
-				AF86D5E9271F6DAF0037F3A4 /* NBAstatsTests.swift */,
 			);
 			path = NBAstats;
+			sourceTree = "<group>";
+		};
+		AF86D5F2271F6FB40037F3A4 /* NBAstatsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF86D5F3271F6FB40037F3A4 /* NBAstatsTests.swift */,
+				AF86D5FA271F73050037F3A4 /* VCTest.swift */,
+			);
+			path = NBAstatsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +123,24 @@
 			productReference = AF86D5C92714E1750037F3A4 /* NBAstats.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AF86D5F0271F6FB40037F3A4 /* NBAstatsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF86D5F7271F6FB40037F3A4 /* Build configuration list for PBXNativeTarget "NBAstatsTests" */;
+			buildPhases = (
+				AF86D5ED271F6FB40037F3A4 /* Sources */,
+				AF86D5EE271F6FB40037F3A4 /* Frameworks */,
+				AF86D5EF271F6FB40037F3A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF86D5F6271F6FB40037F3A4 /* PBXTargetDependency */,
+			);
+			name = NBAstatsTests;
+			productName = NBAstatsTests;
+			productReference = AF86D5F1271F6FB40037F3A4 /* NBAstatsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +153,10 @@
 				TargetAttributes = {
 					AF86D5C82714E1750037F3A4 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					AF86D5F0271F6FB40037F3A4 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = AF86D5C82714E1750037F3A4;
 					};
 				};
 			};
@@ -122,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				AF86D5C82714E1750037F3A4 /* NBAstats */,
+				AF86D5F0271F6FB40037F3A4 /* NBAstatsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +190,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF86D5EF271F6FB40037F3A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,11 +208,27 @@
 				AF86D5E12714E1F70037F3A4 /* ModelController.swift in Sources */,
 				AF86D5CD2714E1750037F3A4 /* AppDelegate.swift in Sources */,
 				AF86D5CF2714E1750037F3A4 /* SceneDelegate.swift in Sources */,
-				AF86D5EA271F6DAF0037F3A4 /* NBAstatsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF86D5ED271F6FB40037F3A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF86D5FB271F73050037F3A4 /* VCTest.swift in Sources */,
+				AF86D5F4271F6FB40037F3A4 /* NBAstatsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF86D5F6271F6FB40037F3A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF86D5C82714E1750037F3A4 /* NBAstats */;
+			targetProxy = AF86D5F5271F6FB40037F3A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AF86D5D22714E1750037F3A4 /* Main.storyboard */ = {
@@ -346,6 +422,52 @@
 			};
 			name = Release;
 		};
+		AF86D5F8271F6FB40037F3A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37Y3Y57488;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariscal-Development.NBAstatsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBAstats.app/NBAstats";
+			};
+			name = Debug;
+		};
+		AF86D5F9271F6FB40037F3A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 37Y3Y57488;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariscal-Development.NBAstatsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBAstats.app/NBAstats";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -363,6 +485,15 @@
 			buildConfigurations = (
 				AF86D5DE2714E1760037F3A4 /* Debug */,
 				AF86D5DF2714E1760037F3A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF86D5F7271F6FB40037F3A4 /* Build configuration list for PBXNativeTarget "NBAstatsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF86D5F8271F6FB40037F3A4 /* Debug */,
+				AF86D5F9271F6FB40037F3A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

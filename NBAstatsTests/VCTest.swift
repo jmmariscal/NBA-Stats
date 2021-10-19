@@ -1,13 +1,13 @@
 //
-//  NBAstatsTests.swift
-//  NBAstats
+//  VCTest.swift
+//  NBAstatsTests
 //
 //  Created by Juan M Mariscal on 10/19/21.
 //
 
 import XCTest
 
-class NBAstatsTests: XCTestCase {
+class VCTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
