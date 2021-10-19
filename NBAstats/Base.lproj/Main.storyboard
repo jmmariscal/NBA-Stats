@@ -50,7 +50,7 @@
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.58823529409999997" green="0.92549019610000005" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="segmentedIndexTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="Jye-c7-gUA"/>
+                                    <action selector="segmentedIndexTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="XlA-UF-h9E"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check for Champion by year: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-5E-BEg">
@@ -59,34 +59,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wDo-Hu-nsT">
-                                <rect key="frame" x="0.0" y="138" width="414" height="51"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6S-CK-WQh">
+                                <rect key="frame" x="10" y="148" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </searchBar>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hyz-uD-jHX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="3C5-6h-ao7"/>
+                            <constraint firstItem="u6S-CK-WQh" firstAttribute="top" secondItem="zf7-5E-BEg" secondAttribute="bottom" constant="20" id="7MS-ao-ycE"/>
                             <constraint firstItem="IPC-np-BNH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="920-UH-jyE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u6S-CK-WQh" secondAttribute="trailing" constant="10" id="9ae-dg-qvO"/>
                             <constraint firstItem="zf7-5E-BEg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Aa9-yp-Sdq"/>
                             <constraint firstItem="4EG-9u-1Oi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bnj-ZQ-aNA"/>
                             <constraint firstItem="4EG-9u-1Oi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LPT-lD-nq0"/>
                             <constraint firstItem="4EG-9u-1Oi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Py7-D7-X9P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4EG-9u-1Oi" secondAttribute="trailing" constant="40" id="SXB-rV-vo5"/>
-                            <constraint firstItem="wDo-Hu-nsT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eu1-Wp-y0R"/>
-                            <constraint firstItem="wDo-Hu-nsT" firstAttribute="top" secondItem="zf7-5E-BEg" secondAttribute="bottom" constant="10" id="maG-xM-ZIm"/>
+                            <constraint firstItem="IPC-np-BNH" firstAttribute="top" secondItem="u6S-CK-WQh" secondAttribute="bottom" constant="57" id="ToN-1B-TO1"/>
+                            <constraint firstItem="u6S-CK-WQh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="f1g-wk-Mg4"/>
                             <constraint firstItem="zf7-5E-BEg" firstAttribute="top" secondItem="hyz-uD-jHX" secondAttribute="bottom" constant="5" id="okc-zY-8kj"/>
+                            <constraint firstItem="u6S-CK-WQh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qqP-TW-bi3"/>
                             <constraint firstItem="hyz-uD-jHX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="r2Z-qL-POD"/>
-                            <constraint firstItem="IPC-np-BNH" firstAttribute="top" secondItem="wDo-Hu-nsT" secondAttribute="bottom" constant="50" id="sQY-HA-QDp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zf7-5E-BEg" secondAttribute="trailing" constant="20" id="vSj-Ig-gfl"/>
-                            <constraint firstItem="wDo-Hu-nsT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w1R-Nj-3JI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="4EG-9u-1Oi" id="los-2j-coR"/>
                         <outlet property="questionLabel" destination="zf7-5E-BEg" id="BK9-6y-2es"/>
-                        <outlet property="searchBar" destination="wDo-Hu-nsT" id="J25-zv-ulQ"/>
+                        <outlet property="searchTextField" destination="u6S-CK-WQh" id="cd8-Tq-hHe"/>
                         <outlet property="segmentedControl" destination="hyz-uD-jHX" id="ZTF-fa-pnP"/>
                     </connections>
                 </viewController>

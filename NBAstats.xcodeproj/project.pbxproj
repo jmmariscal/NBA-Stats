@@ -14,6 +14,7 @@
 		AF86D5D62714E1760037F3A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF86D5D52714E1760037F3A4 /* Assets.xcassets */; };
 		AF86D5D92714E1760037F3A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF86D5D72714E1760037F3A4 /* LaunchScreen.storyboard */; };
 		AF86D5E12714E1F70037F3A4 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D5E02714E1F70037F3A4 /* ModelController.swift */; };
+		AF86D5EA271F6DAF0037F3A4 /* NBAstatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF86D5E9271F6DAF0037F3A4 /* NBAstatsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AF86D5D82714E1760037F3A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF86D5DA2714E1760037F3A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF86D5E02714E1F70037F3A4 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		AF86D5E9271F6DAF0037F3A4 /* NBAstatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBAstatsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				AF86D5D52714E1760037F3A4 /* Assets.xcassets */,
 				AF86D5D72714E1760037F3A4 /* LaunchScreen.storyboard */,
 				AF86D5DA2714E1760037F3A4 /* Info.plist */,
+				AF86D5E9271F6DAF0037F3A4 /* NBAstatsTests.swift */,
 			);
 			path = NBAstats;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				AF86D5E12714E1F70037F3A4 /* ModelController.swift in Sources */,
 				AF86D5CD2714E1750037F3A4 /* AppDelegate.swift in Sources */,
 				AF86D5CF2714E1750037F3A4 /* SceneDelegate.swift in Sources */,
+				AF86D5EA271F6DAF0037F3A4 /* NBAstatsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
