@@ -12,5 +12,13 @@ class VCTest: XCTestCase {
     func testYearsInput() {
         
     }
+    
+    func testWrongYearInput() {
+        
+    }
+    
+    func testTeamNameInput() {
+        
+    }
 
 }
