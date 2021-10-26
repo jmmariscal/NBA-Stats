@@ -14,12 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var searchButton: UIButton!
     
     var dataFiltered: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateSearchFor(questionType: .champByYear)
+        searchButton.layer.cornerRadius = 30
     }
     
     private var inputQuestionType = QuestionType.firstYear {
@@ -69,12 +71,12 @@ class ViewController: UIViewController {
         case firstYear, champByYear, allYears
     }
     
-    // Update the keyboard depending on the question being asked
+    // Updated keyboard depending on question
     func updateSearchFor(questionType: QuestionType) {
         func updateKeyboarType(to keyboardType: UIKeyboardType, andQuestionText questionText: String) {
             searchTextField.text = ""
             searchTextField.resignFirstResponder()
-            searchTextField.keyboardType = keyboardTyped
+            searchTextField.keyboardType = keyboardType
             searchTextField.becomeFirstResponder()
             questionLabel.text = questionText
         }
