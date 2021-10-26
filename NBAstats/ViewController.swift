@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         didSet {
             updateSearchFor(questionType: inputQuestionType)
         }
-        
     }
     
     
@@ -61,20 +60,21 @@ class ViewController: UIViewController {
         }
     }
     
-    func keyboardTypeAndLabelText() {
-        
-    }
-    
-    
+//    func keyboardTypeAndLabelText() {
+//
+//    }
+//
+//
     enum QuestionType {
         case firstYear, champByYear, allYears
     }
     
+    // Update the keyboard depending on the question being asked
     func updateSearchFor(questionType: QuestionType) {
         func updateKeyboarType(to keyboardType: UIKeyboardType, andQuestionText questionText: String) {
             searchTextField.text = ""
             searchTextField.resignFirstResponder()
-            searchTextField.keyboardType = keyboardType
+            searchTextField.keyboardType = keyboardTyped
             searchTextField.becomeFirstResponder()
             questionLabel.text = questionText
         }
