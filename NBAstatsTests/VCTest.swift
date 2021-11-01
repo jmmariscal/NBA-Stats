@@ -20,5 +20,9 @@ class VCTest: XCTestCase {
     func testTeamNameInput() {
         
     }
+    
+    func testWrongTeamNameInput() {
+        
+    }
 
 }
